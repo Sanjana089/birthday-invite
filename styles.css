@@ -294,7 +294,6 @@ body {
 .frame2 {
     height: 100vh;
     position: relative;
-    margin: 4rem 0;
     transition: height 500ms ease;
 }
 
