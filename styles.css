@@ -377,7 +377,7 @@ body {
     height: 8rem;
     transition: transform 0.5s;
     position: relative;
-    bottom: -19rem;
+    bottom: -17rem;
 }
 
 .card-clicked .title {
@@ -405,7 +405,7 @@ body {
     color: white;
     font-size: 1.2rem;
     position: relative;
-    top: 21rem;
+    top: 18rem;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
