@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Knewave);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates);
 
 * {
     box-sizing: border-box;
@@ -34,6 +36,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -264,11 +267,11 @@ body {
 .avengers-assemble {
     font-family: 'Bangers';
     position: relative;
-    bottom: 19rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 3rem;
+    margin-top: 4rem;
     color: white;
     transition: opacity 0.5s ease-in;
     opacity: 0;
@@ -289,7 +292,7 @@ body {
 }
 
 .frame2 {
-    height: 0;
+    height: 100vh;
     position: relative;
     margin: 4rem 0;
     transition: height 500ms ease;
@@ -324,11 +327,10 @@ body {
     transition: all 0.5s;
     position: absolute;
     width: 100%;
-    /* top: 4rem; */
     z-index: -1;
 }
 
-.card:hover .card-wrapper {
+.card-clicked {
     transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
@@ -359,18 +361,18 @@ body {
     bottom: 0;
     opacity: 1;
     background-image: linear-gradient(to bottom,
-            transparent 46%,
-            rgba(12, 13, 19, 0.5) 68%,
+            transparent 26%,
+            rgba(12, 13, 19, 0.5) 48%,
             rgba(12, 13, 19) 97%);
 }
 
-.card:hover .card-wrapper::before,
+.card-clicked .card-wrapper::before,
 .card-wrapper::after {
     opacity: 1;
 }
 
-.card:hover .card-wrapper::after {
-    height: 120px;
+.card-clicked .card-wrapper::after {
+    height: 250px;
 }
 
 .title {
@@ -380,19 +382,21 @@ body {
     position: relative;
 }
 
-.card:hover .title {
-    transform: translate3d(0%, -50px, 100px);
+.card-clicked .title {
+    transform: translate3d(0%, -20px, 100px);
+    height: 8rem;
 }
 
 .character {
     width: 100%;
+    height: 42vh;
     opacity: 0;
     transition: all 0.5s;
     position: absolute;
     z-index: -1;
 }
 
-.card:hover .character {
+.card-clicked .character {
     opacity: 1;
     transform: translate3d(0%, -15%, 1000px);
 }
@@ -402,13 +406,18 @@ body {
     opacity: 1;
     text-align: center;
     color: white;
+    font-size: 1.2rem;
     position: relative;
     top: 27rem;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.venue hr {
-    width: 80%;
-    color: white;
-    height: 4px;
-    background-color: white;
+.frame2-body {
+    background-image: url('f2.png');
+}
+
+.superhero {
+    font-family: 'Knewave';
+    color: #d9d013;
+    font-size: 2rem;
 }
