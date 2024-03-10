@@ -306,14 +306,12 @@ body {
     width: auto;
     
     height: auto;
-    top: 25rem;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     padding: 0 36px;
     perspective: 2500px;
-    margin: 0 50px;
+    margin: 2rem 50px;
 }
 
 .cover-image {
@@ -379,6 +377,7 @@ body {
     height: fit-content;
     transition: transform 0.5s;
     position: relative;
+    bottom: -22rem;
 }
 
 .card-clicked .title {
