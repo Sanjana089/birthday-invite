@@ -311,7 +311,7 @@ body {
     justify-content: center;
     padding: 0 36px;
     perspective: 2500px;
-    margin: 2rem 50px;
+    margin: 3rem 50px;
 }
 
 .cover-image {
@@ -323,7 +323,7 @@ body {
 .card-wrapper {
     transition: all 0.5s;
     position: absolute;
-    width: 100%;
+    width: 90%;
     z-index: -1;
 }
 
@@ -374,20 +374,19 @@ body {
 
 .title {
     width: 100%;
-    height: fit-content;
+    height: 8rem;
     transition: transform 0.5s;
     position: relative;
-    bottom: -22rem;
+    bottom: -19rem;
 }
 
 .card-clicked .title {
     transform: translate3d(0%, -20px, 100px);
-    height: 8rem;
 }
 
 .character {
     width: 100%;
-    height: 42vh;
+    height: 28vh;
     opacity: 0;
     transition: all 0.5s;
     position: absolute;
@@ -396,7 +395,7 @@ body {
 
 .card-clicked .character {
     opacity: 1;
-    transform: translate3d(0%, -15%, 1000px);
+    transform: translate3d(0%, 10%, 1000px);
 }
 
 .venue {
@@ -406,7 +405,7 @@ body {
     color: white;
     font-size: 1.2rem;
     position: relative;
-    top: 27rem;
+    top: 21rem;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
