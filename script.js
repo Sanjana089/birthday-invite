@@ -48,10 +48,19 @@ document.addEventListener("DOMContentLoaded", function () {
       button.style.display = 'none';
     });
   }
-
-  const coverClick = document.querySelector('.card');
-  coverClick.addEventListener('click', function () {
-    coverClick.classList.toggle('card-clicked');
-  })
-
 });
+
+$('.check').bind('change', function() {
+  henshin();
+});
+
+henshin = function() {
+var checkbox = $('.check'),
+  human = !checkbox.is(':checked');
+
+  $('h3').fadeOut(function() {
+    $(this).text(((human) ? 'Human' : 'Super Hero') + ' mode').fadeIn();
+    $('.background').toggleClass('active');
+  });
+}
+
